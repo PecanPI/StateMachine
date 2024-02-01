@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43fcd18d-8b2e-4a50-b799-14b5eaa10b5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GameFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CellType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Environment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

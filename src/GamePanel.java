@@ -7,12 +7,32 @@ public class GamePanel extends JPanel implements Runnable {
     private final long desiredFPS = 60;
     private long desiredFrameTime = 1000000000/ desiredFPS;
 
+
+    public final int CELL_SIZE = 10;
+    public final int X_CELLS = 120;
+    public final int Y_CELLS = 100
+    public final int SCREEN_WIDTH =  X_CELLS*CELL_SIZE;
+    public final int SCREEN_HEIGHT = Y_CELLS*CELL_SIZE;
+    public final int NUMBER_OF_ANTS = 50; //TODO: update this take user value
+
     Image image;
     Graphics graphics;
     Thread gameThread;
 
-    GamePanel(){
+    Environment environment;
 
+    GamePanel(){
+        this.setPreferredSize(new Dimension(SCREEN_WIDTH,SCREEN_HEIGHT));
+        this.setFocusable(true);
+        start();
+    }
+    public void start(){
+        gameThread = new Thread(this);
+        gameThread.start();
+    }
+
+    public void intializeEnviornment(){
+        environment = new Environment(X_CELLS, Y_CELLS);
     }
     public void paint(Graphics g){
         image =  createImage(getWidth(), getHeight());
